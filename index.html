@@ -1,1 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ChatPlayground Clone</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="auth-container">
+    <h2>Sign In</h2>
+    <input type="email" id="email" placeholder="Email">
+    <input type="password" id="password" placeholder="Password">
+    <button onclick="signIn()">Sign In</button>
+    <button onclick="signUp()">Sign Up</button>
+    <button onclick="logout()">Logout</button>
+  </div>
+
+  <div id="chat-container">
+    <h2>Chat Interface</h2>
+    <select id="modelDropdown">
+      <option value="gpt-3">GPT-3</option>
+      <option value="gpt-4">GPT-4</option>
+      <option value="huggingface">Hugging Face</option>
+    </select>
+    <div id="chat-window"></div>
+    <input type="text" id="user-input" placeholder="Type your message">
+    <button id="send-btn" onclick="sendMessage()">Send</button>
+  </div>
+
+  <script src="firebase.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
 
