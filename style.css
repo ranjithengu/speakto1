@@ -1,1 +1,24 @@
+/* style.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+#auth-container, #chat-container {
+  padding: 20px;
+}
+
+#chat-window {
+  height: 300px;
+  overflow-y: scroll;
+  border: 1px solid #ccc;
+  margin-top: 20px;
+}
+
+#user-input, #send-btn {
+  margin-top: 10px;
+  padding: 10px;
+}
 
